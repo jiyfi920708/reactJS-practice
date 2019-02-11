@@ -15,3 +15,5 @@ some of code from
 https://github.com/react-in-action/letters-social
 
 https://github.com/ahuimanu/CIDM4385-Spring2019/blob/master/PizzaExample/index.html
+
+https://getbootstrap.com/docs/4.3/utilities/colors/

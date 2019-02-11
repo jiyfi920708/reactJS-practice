@@ -9,6 +9,7 @@
     
 </head>
 <body>
+    <div id="root"></div>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -19,6 +20,33 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type = "text/babel">
+            var root = document.getElementById('root');
+    
+            var content = React.createElement('ul',{}, 
+                    React.createElement('li', {}, "First thing"),
+                    React.createElement('li', {}, "Second thing"),
+            );
+
+            var jsxcontent = (
+                <ul>
+                    <li className="text-danger">First thing</li>
+                    <li>Second thing</li>
+                </ul>
+            );
+            /*
+            ReactDOM.createElement (
+                1.
+                2.
+                3.
+                4.
+            )
+            */
+
+            ReactDOM.render(jsxcontent,root);
+
+    </script>
     
      <!-- Local Scripts -->
     <script src="src/js/main.js"></script>
